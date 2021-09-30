@@ -40,6 +40,7 @@ ScrollReveal().reveal('.header', {
   delay: 100,
   reset: true,
   viewFactor: 0,
+  mobile: false,
 });
 ScrollReveal().reveal('.sec-title', {
   origin: 'left',
@@ -48,6 +49,7 @@ ScrollReveal().reveal('.sec-title', {
   delay: 100,
   reset: false,
   viewFactor: 0,
+  mobile: false,
 });
 ScrollReveal().reveal('.fade-left', {
   origin: 'left',
@@ -56,6 +58,7 @@ ScrollReveal().reveal('.fade-left', {
   delay: 100,
   reset: false,
   viewFactor: 0,
+  mobile: false,
 });
 ScrollReveal().reveal('.fade-right', {
   origin: 'right',
@@ -64,6 +67,7 @@ ScrollReveal().reveal('.fade-right', {
   delay: 100,
   reset: false,
   viewFactor: 0,
+  mobile: false,
 });
 ScrollReveal().reveal('.fade-up', {
   origin: 'bottom',
@@ -72,4 +76,5 @@ ScrollReveal().reveal('.fade-up', {
   delay: 100,
   reset: false,
   viewFactor: 0,
+  mobile: false,
 });
