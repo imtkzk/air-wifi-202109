@@ -859,7 +859,7 @@ ul.btn-box .btn-secondary a:hover {
 .mv {
   background: url(../img/top/mv-bg.png) center center no-repeat;
   display: block;
-  margin-top: 18vw;
+  margin-top: 15vw;
 }
 
 .mv .cont {
@@ -972,7 +972,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .mv .left {
   margin-right: 0;
-  padding-top: 1vw;
+  padding-top: 3vw;
 }
 
 .mv .right {
