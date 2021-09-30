@@ -1,0 +1,1472 @@
+// main: ../style.scss
+
+/*  20210919 CSS
+------------------------------------------------------------------------------*/
+.mv .cont{
+  text-align: left;
+}
+.mv .cont .mv-catch01-box li:first-child {
+  margin-left: 0;
+}
+.mv-price{
+  .pricetxtTax{
+    text-align: right;
+    font-size: vw-sp(36);
+    font-weight: 600;
+  }
+}
+.cta-primary {
+  margin-top: vw-sp(100);
+  .cta-cont{
+    p.pricetxtTax{
+      text-align: right;
+      font-size: vw-sp(36);
+      font-weight: 600;
+      margin-bottom: vw-sp(50);
+      padding-right: vw-sp(50);
+      margin-top: vw-sp(-30);
+    }
+  }
+}
+.cta-secondary {
+  .pricetxtTax{
+    text-align: right;
+    font-size: vw-sp(36);
+    font-weight: 600;
+    padding-right: vw-sp(40);
+    margin-bottom: vw-sp(50);
+    margin-top: vw-sp(-20);
+  }
+}
+.btn {
+  .logotxt{
+    font-family: $font2;
+    font-weight: 100;
+    margin-right: .3em;
+    font-size: vw-sp(48);
+  }
+}
+.tab01{
+  @include gradi;
+}
+.special{
+  background: url("../img/top/specialbg.png") no-repeat bottom right;
+  background-size: cover;
+  padding: vw-sp(100) 0;
+  .special-cont{
+    background-color: #fff;
+    width: vw-sp(690);
+    max-width: vw-sp(800);
+    margin: 0 auto;
+    border: vw-sp(4) solid $color-red;
+    box-shadow: 0 0 vw-sp(40) rgba(0,0,0,0.1);
+    padding: vw-sp(40);
+    .special-title{
+      font-size: vw-sp(36);
+      text-align: center;
+      font-weight: 600;
+      position: relative;
+      margin-bottom: vw-sp(30);
+      .title-top::before{
+        content: "";
+        background-color: #e41f1a;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+        position: absolute;
+        width: vw-sp(8);
+        height: vw-sp(40);
+        left: vw-sp(100);
+        top: vw-sp(8);
+      }
+      .title-top::after{
+        content: "";
+        background-color: #e41f1a;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        position: absolute;
+        width: vw-sp(8);
+        height: vw-sp(40);
+        right: vw-sp(100);
+        top: vw-sp(8);
+      }
+      .title-main{
+        color: $color-red;
+        font-weight: 600;
+        font-size: vw-sp(48);
+        font-style: italic;
+        letter-spacing: .1em;
+        margin-top: vw-sp(10);
+        .title-main-b{
+          font-size: vw-sp(48);
+        }
+        small{
+          font-size: 0.5em;
+          color: #333;
+        }
+      }
+    }
+    .special-contents{
+      .special-lists{
+        margin-bottom: vw-sp(50);
+        display: flex;
+        .special-list{
+          width: vw-sp(280);
+          background-color: #fff;
+          padding: vw-sp(30) vw-sp(30) vw-sp(10);
+          margin: 0 auto;
+          border: vw-sp(2) solid $color-red;
+          box-shadow: vw-sp(10) vw-sp(10) 0 $color-red;
+          text-align: center;
+          .list-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-red;
+            font-weight: 600;
+            font-size: vw-sp(22);
+            height: vw-sp(83);
+            margin-bottom: vw-sp(-20);
+          }
+          .list-price{
+            font-weight: 600;
+            font-size: vw-sp(36);
+            span{
+              font-family: $font2;
+              font-weight: 100;
+              color: $color-red;
+              font-size: vw-sp(90);
+              margin-right: .2em;
+            }
+          }
+        }
+      }
+      .special-lists-other{
+        margin-bottom: vw-sp(50);
+        text-align: center;
+        .list-other-title{
+          font-size: vw-sp(36);
+          font-weight: 600;
+          margin-bottom: vw-sp(10);
+          span{
+            color: $color-red;
+            font-size: vw-sp(48);
+          }
+        }
+      }
+      .btn-box{
+        max-width: vw-sp(580);
+        margin-bottom: vw-sp(50);
+        a{
+          height: vw-sp(120);
+        }
+      }
+      .special-caution{
+        .btnClick{
+          font-size: vw-sp(30);
+          font-weight: 600;
+          background-color: #000;
+          padding: 0.3em 1em;
+          color: #fff;
+          position: relative;
+          cursor: pointer;
+        }
+        .btnClick::after {
+          content: "＋";
+          font-size: vw-sp(30);
+          color: #fff;
+          position: absolute;
+          right: 1em;
+        }
+        .is-active::after {
+          content: "ー";
+          font-size: vw-sp(30);
+          position: absolute;
+          right: 1em;
+        }
+        .inner {
+          opacity: 0;
+          height: 0;
+          margin-bottom: vw-sp(30);
+        }
+        .btnClick + .is-open {
+          opacity: 1;
+          height: 100%;
+          background-color: #f8f8f8;
+          -webkit-transition: all ease 0.3s;
+          transition: all ease 0.3s;
+          padding: vw-sp(20) vw-sp(30) vw-sp(30);
+          li{
+            padding-left: 1em;
+            text-indent: -1em
+          }
+        }
+        p{
+          padding-left: 1em;
+          text-indent: -1em
+        }
+      }
+    }
+  }
+}
+.spec{
+  .spec-cont{
+    .tabmenu{
+      .tab01-top{
+        font-size: vw-sp(24);
+        font-weight: 600;
+        position: relative;
+        bottom: vw-sp(80);
+        span{
+          font-family: $font2;
+        }
+        b{
+          color: $color-red;
+        }
+      }
+    }
+    .spec-lists{
+      .list-chatch-box{
+        .pricetxtTax{
+          text-align: right;
+          font-weight: 600;
+          padding-right: 50px;
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+.option02{
+  background: url("../img/top/option02bg.png") no-repeat center bottom;
+  background-size: cover;
+  padding: vw-sp(100) 0;
+  .option02-cont{
+    background-color: #fff;
+    width: vw-sp(690);
+    margin: 0 auto;
+    box-shadow: 0 0 vw-sp(40) rgba(0,0,0,0.1);
+    padding: vw-sp(50);
+    .option02-title{
+      font-size: vw-sp(36);
+      text-align: center;
+      font-weight: 800;
+      position: relative;
+      margin-bottom: vw-sp(30);
+      .title-top::before{
+        content: "";
+        background-color: #e41f1a;
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+        position: absolute;
+        width: vw-sp(4);
+        height: vw-sp(30);
+        left: vw-sp(40);
+        top: vw-sp(10);
+      }
+      .title-top::after{
+        content: "";
+        background-color: #e41f1a;
+        -webkit-transform: rotate(35deg);
+        transform: rotate(35deg);
+        position: absolute;
+        width: vw-sp(4);
+        height: vw-sp(30);
+        right: vw-sp(40);
+        top: vw-sp(10);
+      }
+      .title-main{
+        color: $color-red;
+        font-weight: 600;
+        font-size: vw-sp(52);
+        font-style: italic;
+        letter-spacing: .2em;
+        margin-top: vw-sp(10);
+      }
+    }
+    .option02-contents{
+      position: relative;
+      .base-price{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .maximum{
+          font-size: vw-sp(24);
+          @include gradi;
+          border-radius: vw-sp(10);
+          padding: vw-sp(20) vw-sp(20);
+          color: #fff;
+          font-family: $font2;
+          display: inline;
+          vertical-align: sub;
+          span{
+            font-size: vw-sp(36);
+            margin-right: .1em;
+          }
+        }
+        .spec-pricetxt{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-weight: 600;
+          font-size: vw-sp(36);
+          .price{
+            font-weight: 300;
+            font-size: vw-sp(82);
+            font-family: $font2;
+            font-style: normal;
+            color: #473889;
+            padding-right: 0.1em;
+            background: -webkit-gradient(linear, left top, right top, from(#473889), to(#de3d49));
+            background: linear-gradient(to right, #473889, #de3d49);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: vw-sp(80);
+          }
+       }
+       .pricetxtTax{
+         text-align: right;
+         font-weight: 600;
+         font-size: vw-sp(24);
+       }
+      }
+      .plus-option02{
+        .plus-option02-intro{
+          font-size: vw-sp(36);
+          color: #fff;
+          background-color: $color-red;
+          transform:skewX(-15deg);
+          text-align: center;
+          line-height: vw-sp(75);
+          font-weight: 600;
+          margin-bottom: vw-sp(30);
+          p{
+            transform:skewX(15deg);
+          }
+          span{
+            font-size: vw-sp(48);
+            font-family: $font2;
+            margin-right: .1em;
+          }
+        }
+      }
+      .plus-option02::before{
+        content: "";
+        background: url("../img/top/plus-option02before.png");
+        background-size: cover;
+        height: vw-sp(80);
+        width: vw-sp(80);
+        display: inline-block;
+        left: vw-sp(260);
+        top: vw-sp(30);
+        position: relative;
+        z-index: 999;
+      }
+      .option02-result{
+        .option02-result-intro{
+          font-size: vw-sp(34);
+          color: $color-red;
+          background-color: #fff;
+          border: $color-red vw-sp(2) solid;
+          transform:skewX(-15deg);
+          text-align: center;
+          line-height: vw-sp(75);
+          font-weight: 600;
+          margin-bottom: vw-sp(30);
+          p{
+            transform:skewX(15deg);
+          }
+        }
+      }
+      .option02-result::before{
+        content: "";
+        background: url("../img/top/option02-resultbefore.png");
+        background-size: cover;
+        width: vw-sp(40);
+        height: vw-sp(105);
+        display: inline-block;
+        left: vw-sp(270);
+        top: vw-sp(30);
+        position: relative;
+        z-index: 999;
+      }
+      .option02-result-contents{
+        font-size: vw-sp(32);
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        margin-bottom: vw-sp(30);
+        .box-top{
+            margin-bottom: vw-sp(10);
+        }
+        .box-top::before{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+          position: absolute;
+          width: vw-sp(4);
+          height: vw-sp(30);
+          left: vw-sp(140);
+          top: vw-sp(10);
+        }
+        .box-top::after{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+          position: absolute;
+          width: vw-sp(4);
+          height: vw-sp(30);
+          right: vw-sp(140);
+          top: vw-sp(10);
+        }
+        .option02-result-box{
+          max-width: vw-sp(600);
+          margin: 0 auto;
+          transform:skewX(-15deg);
+          text-align: center;
+          line-height: vw-sp(75);
+          font-weight: 600;
+          margin-bottom: vw-sp(60);
+          z-index: 999;
+          .option02-result-box-inner{
+            background-color: #fff;
+            padding: vw-sp(10) 0 vw-sp(40) 0;
+            border: $color-red vw-sp(2) solid;
+          }
+          .option02-result-box-intro{
+            transform:skewX(15deg);
+            span{
+              font-family: $font2;
+              color: $color-red;
+              font-weight: 100;
+              font-size: vw-sp(48);
+              margin-right: .1em;
+            }
+          }
+          .option02-result-box-price{
+            transform:skewX(15deg);
+            font-size: vw-sp(36);
+            line-height: vw-sp(50);
+            span{
+              font-family: $font2;
+              color: $color-red;
+              font-size: vw-sp(72);
+              font-weight: 100;
+              margin-right: .1em;
+            }
+            small{
+              font-size: .5em;
+            }
+          }
+          .option02-result-box-taxprice{
+            transform:skewX(15deg);
+            line-height: vw-sp(30);
+          }
+        }
+        .option02-result-box::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          box-shadow: vw-sp(10) vw-sp(10) 0 $color-red; /* filterが効かない場合黒い影をつける */
+          z-index: -999;
+        }
+        /* boxの影 (filterプロパティ対応済のブラウザ) */
+        @supports (-webkit-filter: blur(20px)) {
+          .option02-result-box::after {
+            background-image: linear-gradient(135deg, #de3d49 0, #473889 100%);
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            left: vw-sp(10);
+            top: vw-sp(10);
+            box-shadow: none;
+          }
+        }
+      }
+      .plus-option02-lists{
+        display: flex;
+        justify-content: space-between;
+        .list{
+          width: vw-sp(280);
+          background-color: #fff;
+          padding: vw-sp(30) vw-sp(30) vw-sp(10);
+          border: vw-sp(2) solid $color-red;
+          box-shadow: vw-sp(10) vw-sp(10) 0 $color-red;
+          text-align: center;
+          p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: vw-sp(24);
+            line-height: vw-sp(28);
+            height: vw-sp(100);
+            margin-bottom: vw-sp(-20);
+          }
+          .list-price{
+            font-weight: 600;
+            font-size: vw-sp(36);
+            margin-top: vw-sp(20);
+            span{
+              font-family: $font2;
+              font-weight: 100;
+              color: $color-red;
+              font-size: vw-sp(80);
+              margin-right: .2em;
+              line-height: vw-sp(75);
+            }
+          }
+          .list-taxprice{
+            font-weight: 600;
+            margin-bottom: vw-sp(30);
+            font-size: vw-sp(18);
+          }
+        }
+      }
+      .btn-box{
+        max-width: vw-sp(580);
+        margin-bottom: vw-sp(50);
+      }
+    }
+    .option02-caution{
+      padding-left: 1em;
+      text-indent: -1em;
+    }
+  }
+}
+.cta-secondary-02-wrap{
+  margin-top: 80px;
+}
+@media screen and (max-width: $breakpoint1-max){
+  .btn-secondary a{
+    font-size: vw-sp(28)!important;
+    span{
+      font-size: vw-sp(28)!important;
+    }
+  }
+  .spec{
+    .spec-cont{
+      .tabmenu{
+        .tab01-top{
+          width:vw-sp(200);
+          text-align: center;
+          line-height: vw-sp(26);
+        }
+        .tab01-top::before{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+          position: absolute;
+          width: vw-sp(4);
+          height: vw-sp(20);
+          left: vw-sp(-20);
+          top: vw-sp(20);
+        }
+        .tab01-top::after{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+          position: absolute;
+          width: vw-sp(4);
+          height: vw-sp(20);
+          left: vw-sp(210);
+          top: vw-sp(20);
+        }
+      }
+    }
+  }
+  .option02-contents .btn {
+      width:100%;
+      a{
+      height: vw-sp(120)!important;
+      letter-spacing: .01em;
+      .logotxt{
+        font-size: vw-sp(36);
+      }
+    }
+  }
+}
+@media screen and (min-width: $breakpoint1) {
+  .mv-price{
+    .pricetxtTax{
+      text-align: right;
+      font-size: vw-pc(24);
+      font-weight: 600;
+    }
+  }
+  .cta-primary {
+    margin-top: vw-pc(80);
+    .cta-cont{
+      p.pricetxtTax{
+        text-align: right;
+        font-size: vw-pc(24);
+        font-weight: 600;
+        margin-bottom: vw-pc(30);
+        padding-right: vw-pc(30);
+        margin-top: vw-pc(-20);
+      }
+    }
+  }
+  .cta-secondary {
+    .pricetxtTax{
+      text-align: right;
+      font-size: vw-pc(24);
+      font-weight: 600;
+      padding-right: vw-pc(50);
+      margin-bottom: vw-pc(30);
+      margin-top: vw-pc(-20);
+    }
+  }
+  .btn {
+    .logotxt{
+      font-family: $font2;
+      font-weight: 100;
+      margin-right: .3em;
+      font-size: vw-pc(36);
+    }
+  }
+  .tab01{
+    @include gradi;
+  }
+  .special{
+    background: url("../img/top/specialbg.png") no-repeat bottom right;
+    background-size: cover;
+    padding: vw-pc(100) 0;
+    .special-cont{
+      background-color: #fff;
+      width: 96%;
+      max-width: vw-pc(800);
+      margin: 0 auto;
+      border: vw-pc(2) solid $color-red;
+      box-shadow: 0 0 vw-pc(40) rgba(0,0,0,0.1);
+      padding: vw-pc(40);
+      .special-title{
+        font-size: vw-pc(24);
+        text-align: center;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: vw-pc(30);
+        .title-top::before{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(30);
+          left: vw-pc(220);
+          top: vw-pc(4);
+        }
+        .title-top::after{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(30);
+          right: vw-pc(220);
+          top: vw-pc(4);
+        }
+        .title-main{
+          color: $color-red;
+          font-weight: 600;
+          font-size: vw-pc(36);
+          font-style: italic;
+          letter-spacing: .2em;
+          margin-top: vw-pc(10);
+          .title-main-b{
+            font-size: vw-pc(48);
+          }
+          small{
+            font-size: 0.5em;
+            color: #333;
+          }
+        }
+      }
+      .special-contents{
+        .special-lists{
+          margin-bottom: vw-pc(50);
+          display: flex;
+          .special-list{
+            width: vw-pc(320);
+            background-color: #fff;
+            padding: vw-pc(30) vw-pc(30) vw-pc(10);
+            margin: 0 auto;
+            border: vw-pc(2) solid $color-red;
+            box-shadow: vw-pc(10) vw-pc(10) 0 $color-red;
+            text-align: center;
+            .list-title{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $color-red;
+              font-weight: 600;
+              font-size: vw-pc(24);
+              height: vw-pc(83);
+              margin-bottom: vw-pc(-20);
+            }
+            .list-price{
+              font-weight: 600;
+              font-size: vw-pc(36);
+              span{
+                font-family: $font2;
+                font-weight: 100;
+                color: $color-red;
+                font-size: vw-pc(80);
+                margin-right: .2em;
+              }
+            }
+          }
+        }
+        .special-lists-other{
+          margin-bottom: vw-pc(50);
+          text-align: center;
+          .list-other-title{
+            font-size: vw-pc(20);
+            font-weight: 600;
+            margin-bottom: vw-pc(10);
+            span{
+              color: $color-red;
+              font-size: vw-pc(24);
+            }
+          }
+        }
+        .btn-box{
+          max-width: vw-pc(580);
+          margin-bottom: vw-pc(50);
+          a{
+            height: vw-pc(60);
+          }
+        }
+        .special-caution{
+          .btnClick{
+            font-size: vw-pc(18);
+            font-weight: 600;
+            background-color: #000;
+            padding: 0.3em 1em;
+            color: #fff;
+            position: relative;
+            cursor: pointer;
+          }
+          .btnClick::after {
+            content: "＋";
+            font-size: vw-pc(18);
+            color: #fff;
+            position: absolute;
+            right: 1em;
+          }
+          .is-active::after {
+            content: "ー";
+            font-size: vw-pc(18);
+            position: absolute;
+            right: 1em;
+          }
+          .inner {
+            opacity: 0;
+            height: 0;
+            margin-bottom: vw-pc(30);
+          }
+          .btnClick + .is-open {
+            opacity: 1;
+            height: 100%;
+            background-color: #f8f8f8;
+            -webkit-transition: all ease 0.3s;
+            transition: all ease 0.3s;
+            padding: vw-pc(20) vw-pc(30) vw-pc(30);
+            li{
+              padding-left: 1em;
+              text-indent: -1em
+            }
+          }
+          p{
+            padding-left: 1em;
+            text-indent: -1em
+          }
+        }
+      }
+    }
+  }
+  .spec{
+    .spec-cont{
+      .tabmenu{
+        .tab01-top{
+          font-size: vw-pc(18);
+          font-weight: 600;
+          position: relative;
+          bottom: vw-pc(50);
+          left: vw-pc(25);
+          span{
+            font-family: $font2;
+          }
+          b{
+            color: $color-red;
+          }
+        }
+        .tab01-top::before{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(20);
+          left: vw-pc(-20);
+          top: vw-pc(6);
+        }
+        .tab01-top::after{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(20);
+          left: vw-pc(210);
+          top: vw-pc(6);
+        }
+      }
+      .spec-lists{
+        .list-chatch-box{
+          .pricetxtTax{
+            text-align: right;
+            font-weight: 600;
+            padding-right: vw-pc(50);
+            font-size: vw-pc(18);
+            margin-bottom: vw-pc(20);
+          }
+        }
+      }
+    }
+  }
+  .option02{
+    background: url("../img/top/option02bg.png") no-repeat center bottom;
+    background-size: cover;
+    padding: vw-pc(100) 0;
+    .option02-cont{
+      background-color: #fff;
+      width: 96%;
+      max-width: vw-pc(1000);
+      margin: 0 auto;
+      box-shadow: 0 0 vw-pc(40) rgba(0,0,0,0.1);
+      padding: vw-pc(100);
+      .option02-title{
+        font-size: vw-pc(24);
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        margin-bottom: vw-pc(30);
+        .title-top::before{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(30);
+          left: vw-pc(220);
+          top: vw-pc(4);
+        }
+        .title-top::after{
+          content: "";
+          background-color: #e41f1a;
+          -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+          position: absolute;
+          width: vw-pc(4);
+          height: vw-pc(30);
+          right: vw-pc(220);
+          top: vw-pc(4);
+        }
+        .title-main{
+          color: $color-red;
+          font-weight: 600;
+          font-size: vw-pc(36);
+          font-style: italic;
+          letter-spacing: .2em;
+          margin-top: vw-pc(10);
+        }
+      }
+      .option02-contents{
+        position: relative;
+        .base-price{
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .maximum{
+            font-size: vw-pc(24);
+            @include gradi;
+            border-radius: vw-pc(10);
+            padding: vw-pc(10) vw-pc(30);
+            color: #fff;
+            font-family: $font2;
+            display: inline;
+            vertical-align: sub;
+            span{
+              font-size: vw-pc(56);
+              margin-right: .1em;
+            }
+          }
+          .spec-pricetxt{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 600;
+            font-size: vw-pc(36);
+            .price{
+              font-weight: 300;
+              font-size: vw-pc(96);
+              font-family: $font2;
+              font-style: normal;
+              color: #473889;
+              padding-right: 0.1em;
+              background: -webkit-gradient(linear, left top, right top, from(#473889), to(#de3d49));
+              background: linear-gradient(to right, #473889, #de3d49);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              line-height: vw-pc(80);
+            }
+         }
+         .pricetxtTax{
+           text-align: right;
+           font-weight: 600;
+           font-size: vw-pc(24);
+         }
+        }
+        .plus-option02{
+          .plus-option02-intro{
+            font-size: vw-pc(36);
+            color: #fff;
+            background-color: $color-red;
+            transform:skewX(-15deg);
+            text-align: center;
+            line-height: vw-pc(75);
+            font-weight: 600;
+            margin-bottom: vw-pc(30);
+            p{
+              transform:skewX(15deg);
+            }
+            span{
+              font-size: vw-pc(48);
+              font-family: $font2;
+              margin-right: .1em;
+            }
+          }
+        }
+        .plus-option02::before{
+          content: "";
+          background: url("../img/top/plus-option02before.png");
+          background-size: cover;
+          height: vw-pc(80);
+          width: vw-pc(80);
+          display: inline-block;
+          left: vw-pc(360);
+          top: vw-pc(20);
+          position: relative;
+          z-index: 999;
+        }
+        .option02-result{
+          .option02-result-intro{
+            font-size: vw-pc(36);
+            color: $color-red;
+            background-color: #fff;
+            border: $color-red vw-pc(2) solid;
+            transform:skewX(-15deg);
+            text-align: center;
+            line-height: vw-pc(75);
+            font-weight: 600;
+            margin-bottom: vw-pc(30);
+            p{
+              transform:skewX(15deg);
+            }
+          }
+        }
+        .option02-result::before{
+          content: "";
+          background: url("../img/top/option02-resultbefore.png");
+          background-size: cover;
+          width: vw-pc(0);
+          height: vw-pc(105);
+          display: inline-block;
+          left: vw-pc(380);
+          top: vw-pc(20);
+          position: relative;
+          z-index: 999;
+        }
+        .option02-result-contents{
+          font-size: vw-pc(24);
+          text-align: center;
+          font-weight: 800;
+          position: relative;
+          margin-bottom: vw-pc(30);
+          .box-top{
+              margin-bottom: vw-pc(10);
+          }
+          .box-top::before{
+            content: "";
+            background-color: #e41f1a;
+            -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+            position: absolute;
+            width: vw-pc(4);
+            height: vw-pc(30);
+            left: vw-pc(300);
+            top: vw-pc(4);
+          }
+          .box-top::after{
+            content: "";
+            background-color: #e41f1a;
+            -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+            position: absolute;
+            width: vw-pc(4);
+            height: vw-pc(30);
+            right: vw-pc(300);
+            top: vw-pc(4);
+          }
+          .option02-result-box{
+            max-width: vw-pc(600);
+            margin: 0 auto;
+            transform:skewX(-15deg);
+            text-align: center;
+            line-height: vw-pc(75);
+            font-weight: 600;
+            margin-bottom: vw-pc(50);
+            z-index: 999;
+            .option02-result-box-inner{
+              background-color: #fff;
+              padding: vw-pc(10) 0 vw-pc(40) 0;
+              border: $color-red vw-pc(2) solid;
+            }
+            .option02-result-box-intro{
+              transform:skewX(15deg);
+              span{
+                font-family: $font2;
+                color: $color-red;
+                font-weight: 100;
+                font-size: vw-pc(48);
+                margin-right: .1em;
+              }
+            }
+            .option02-result-box-price{
+              transform:skewX(15deg);
+              font-size: vw-pc(24);
+              line-height: vw-pc(50);
+              span{
+                font-family: $font2;
+                color: $color-red;
+                font-size: vw-pc(72);
+                font-weight: 100;
+                margin-right: .1em;
+              }
+              small{
+                font-size: .5em;
+              }
+            }
+            .option02-result-box-taxprice{
+              transform:skewX(15deg);
+              line-height: vw-pc(30);
+            }
+          }
+          .option02-result-box::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: vw-pc(10) vw-pc(10) 0 $color-red; /* filterが効かない場合黒い影をつける */
+            z-index: -999;
+          }
+          /* boxの影 (filterプロパティ対応済のブラウザ) */
+          @supports (-webkit-filter: blur(20px)) {
+            .option02-result-box::after {
+              background-image: linear-gradient(135deg, #de3d49 0, #473889 100%);
+              -webkit-filter: blur(0);
+              filter: blur(0);
+              left: vw-pc(10);
+              top: vw-pc(10);
+              box-shadow: none;
+            }
+          }
+        }
+        .plus-option02-lists{
+          display: flex;
+          justify-content: space-between;
+          .list{
+            width: vw-pc(380);
+            background-color: #fff;
+            padding: vw-pc(30) vw-pc(30) vw-pc(10);
+            border: vw-pc(2) solid $color-red;
+            box-shadow: vw-pc(10) vw-pc(10) 0 $color-red;
+            text-align: center;
+            p{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-weight: 600;
+              line-height: vw-pc(24);
+              font-size: vw-pc(24);
+              height: vw-pc(83);
+              margin-bottom: vw-pc(-20);
+            }
+            .list-price{
+              font-weight: 600;
+              font-size: vw-pc(36);
+              margin-top: vw-pc(20);
+              span{
+                font-family: $font2;
+                font-weight: 100;
+                color: $color-red;
+                font-size: vw-pc(80);
+                margin-right: .2em;
+                line-height: vw-pc(75);
+              }
+            }
+            .list-taxprice{
+              font-weight: 600;
+              margin-bottom: vw-pc(30);
+              font-size: vw-pc(18);
+            }
+          }
+        }
+        .btn-box{
+          max-width: vw-pc(580);
+          margin-bottom: vw-pc(50);
+        }
+      }
+      .option02-caution{
+        padding-left: 1em;
+        text-indent: -1em;
+      }
+    }
+  }
+  .cta-secondary-02-wrap{
+    margin-top: vw-pc(80);
+  }
+}
+@media screen and (min-width: $breakpoint2) {
+  .mv-price{
+    .pricetxtTax{
+      font-size: 24px;
+    }
+  }
+  .cta-primary {
+    margin-top: 80px;
+    .cta-cont{
+      p.pricetxtTax{
+        font-size: 24px;
+        margin-bottom: 30px;
+        padding-right: 30px;
+        margin-top: -20px;
+      }
+    }
+  }
+  .cta-secondary {
+    .pricetxtTax{
+      font-size: 24px;
+      padding-right: 50px;
+      margin-bottom: 30px;
+      margin-top: -20px;
+    }
+  }
+  .btn {
+    .logotxt{
+      font-size: 36px;
+    }
+  }
+  .special{
+    padding: 100px 0;
+    .special-cont{
+      background-color: #fff;
+      width: 96%;
+      max-width: 800px;
+      border: 2px solid $color-red;
+      box-shadow: 0 0 40px rgba(0,0,0,0.1);
+      padding: 40px;
+      .special-title{
+        font-size: 24px;
+        margin-bottom: 30px;
+        .title-top::before{
+          width: 4px;
+          height: 30px;
+          left: 220px;
+          top: 4px;
+        }
+        .title-top::after{
+          width: 4px;
+          height: 30px;
+          right: 220px;
+          top: 4px;
+        }
+        .title-main{
+          font-size: 36px;
+          margin-top: 10px;
+          .title-main-b{
+            font-size: 48px;
+          }
+        }
+      }
+      .special-contents{
+        .special-lists{
+          margin-bottom: 50px;
+          .special-list{
+            width: 320px;
+            padding: 30px 30px 10px;
+            border: 2px solid $color-red;
+            box-shadow: 10px 10px 0 $color-red;
+            .list-title{
+              font-size: 24px;
+              height: 83px;
+              margin-bottom: -20px;
+            }
+            .list-price{
+              font-size: 36px;
+              span{
+                font-size: 80px;
+              }
+            }
+          }
+        }
+        .special-lists-other{
+          margin-bottom: 50px;
+          .list-other-title{
+            font-size: 20px;
+            margin-bottom: 10px;
+            span{
+              font-size: 24px;
+            }
+          }
+        }
+        .btn-box{
+          max-width: 580px;
+          margin-bottom: 50px;
+          a{
+            height: 60px;
+          }
+        }
+        .special-caution{
+          .btnClick{
+            font-size: 18px;
+            padding: 0.3em 1em;
+          }
+          .btnClick::after {
+            font-size: 18px;
+          }
+          .is-active::after {
+            font-size: 18px;
+          }
+          .inner {
+            margin-bottom: 30px;
+          }
+          .btnClick + .is-open {
+            padding: 20px 30px 30px;
+          }
+        }
+      }
+    }
+  }
+  .spec{
+    .spec-cont{
+      .tabmenu{
+        .tab01-top{
+          font-size: 18px;
+          bottom: 50px;
+          left: 25px;
+        }
+        .tab01-top::before{
+          width: 4px;
+          height: 20px;
+          left: -20px;
+          top: 6px;
+        }
+        .tab01-top::after{
+          width: 4px;
+          height: 20px;
+          left: 210px;
+          top: 6px;
+        }
+      }
+      .spec-lists{
+        .list-chatch-box{
+          .pricetxtTax{
+            padding-right: 50px;
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+  .option02{
+    padding: 100px 0;
+    .option02-cont{
+      max-width: 1000px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.1);
+      padding: 100px;
+      .option02-title{
+        font-size: 24px;
+        margin-bottom: 30px;
+        .title-top::before{
+          width: 4px;
+          height: 30px;
+          left: 220px;
+          top: 4px;
+        }
+        .title-top::after{
+          width: 4px;
+          height: 30px;
+          right: 220px;
+          top: 4px;
+        }
+        .title-main{
+          font-size: 36px;
+          margin-top: 10px;
+        }
+      }
+      .option02-contents{
+        .base-price{
+          .maximum{
+            font-size: 24px;
+            border-radius: 10px;
+            padding: 10px 30px;
+            span{
+              font-size: 56px;
+            }
+          }
+          .spec-pricetxt{
+            font-size: 36px;
+            .price{
+              font-size: 96px;
+              line-height: 80px;
+            }
+         }
+         .pricetxtTax{
+           font-size: 24px;
+         }
+        }
+        .plus-option02{
+          .plus-option02-intro{
+            font-size: 36px;
+            line-height: 75px;
+            margin-bottom: 30px;
+            span{
+              font-size: 48px;
+            }
+          }
+        }
+        .plus-option02::before{
+          height: 80px;
+          width: 80px;
+          left: 360px;
+          top: 20px;
+        }
+        .option02-result{
+          .option02-result-intro{
+            font-size: 36px;
+            border: $color-red 2px solid;
+            line-height: 75px;
+            margin-bottom: 30px;
+          }
+        }
+        .option02-result::before{
+          width: 40px;
+          height: 105px;
+          left: 380px;
+          top: 20px;
+        }
+        .option02-result-contents{
+          font-size: 24px;
+          margin-bottom: 30px;
+          .box-top{
+              margin-bottom: 10px;
+          }
+          .box-top::before{
+            width: 4px;
+            height: 30px;
+            left: 300px;
+            top: 4px;
+          }
+          .box-top::after{
+            width: 4px;
+            height: 30px;
+            right: 300px;
+            top: 4px;
+          }
+          .option02-result-box{
+            max-width: 600px;
+            line-height: 75px;
+            margin-bottom: 50px;
+            .option02-result-box-inner{
+              padding: 10px 0 40px 0;
+              border: $color-red 2px solid;
+            }
+            .option02-result-box-intro{
+              span{
+                font-size: 48px;
+              }
+            }
+            .option02-result-box-price{
+              font-size: 24px;
+              line-height: 50px;
+              span{
+                font-size: 72px;
+              }
+            }
+            .option02-result-box-taxprice{
+              line-height: 30px;
+            }
+          }
+          /* boxの影 (filterプロパティ対応済のブラウザ) */
+          @supports (-webkit-filter: blur(20px)) {
+            .option02-result-box::after {
+              left: 10px;
+              top: 10px;
+            }
+          }
+        }
+        .plus-option02-lists{
+          .list{
+            width: 380px;
+            padding: 30px 30px 10px;
+            border: 2px solid $color-red;
+            box-shadow: 10px 10px 0 $color-red;
+            p{
+              font-size: 24px;
+              line-height: 36px;
+              height: 83px;
+              margin-bottom: -20px;
+            }
+            .list-price{
+              font-size: 36px;
+              margin-top: 20px;
+              span{
+                font-size: 80px;
+                line-height: 75px;
+              }
+            }
+            .list-taxprice{
+              margin-bottom: 30px;
+              font-size: 18px;
+            }
+          }
+        }
+        .btn-box{
+          max-width: 580px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  .cta-secondary-02-wrap{
+    margin-top: 80px;
+  }
+}
