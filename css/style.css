@@ -857,7 +857,7 @@ ul.btn-box .btn-secondary a:hover {
 /*  top CSS
 ------------------------------------------------------------------------------*/
 .mv {
-  background: url(../img/top/mv-bg.png) center right no-repeat;
+  background: url(../img/top/mv-bg.png) center center no-repeat;
   display: block;
   margin-top: 18vw;
 }
@@ -1006,6 +1006,7 @@ ul.btn-box .btn-secondary a:hover {
 
 @media screen and (min-width: 769px) {
   .mv {
+    background: url(../img/top/mv-bg.png) center right no-repeat;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
