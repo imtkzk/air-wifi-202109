@@ -754,7 +754,7 @@ ul.btn-box .btn-secondary a:hover {
             align-items: center;
   }
   .header ul.nav li {
-    margin-right: 3rem;
+    margin-right: 2vw;
     font-weight: 600;
   }
   .header ul.nav li.nav-btn {
@@ -878,7 +878,7 @@ ul.btn-box .btn-secondary a:hover {
           transform: skewY(-4deg);
   color: #e41f1a;
   font-weight: 600;
-  font-size: 5.2vw;
+  font-size: 5vw;
   width: 96%;
   margin: 0 auto;
 }
