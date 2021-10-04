@@ -423,8 +423,8 @@ input[type="radio"]:checked + span::after {
 }
 
 .header .header-logo {
-  width: 217px;
-  margin-left: 20px;
+  width: 45vw;
+  margin-left: 1vw;
 }
 
 .header ul.nav {
@@ -740,6 +740,11 @@ ul.btn-box .btn-secondary a:hover {
   .header {
     height: 5.55556vw;
   }
+  .header .header-logo {
+    width: 18vw;
+    max-width: 250px;
+    margin-left: 1vw;
+  }
   .header ul.nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -873,7 +878,7 @@ ul.btn-box .btn-secondary a:hover {
           transform: skewY(-4deg);
   color: #e41f1a;
   font-weight: 600;
-  font-size: 5.72917vw;
+  font-size: 5.2vw;
   width: 96%;
   margin: 0 auto;
 }
@@ -884,7 +889,7 @@ ul.btn-box .btn-secondary a:hover {
           transform: skewX(-15deg);
   -webkit-font-feature-settings: normal;
           font-feature-settings: normal;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.1em;
   padding: 0.1em 0.5em;
   margin-bottom: 3.90625vw;
   line-height: 1;
@@ -895,7 +900,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .mv .cont .mv-catch01-box li span {
   font-family: "Hemi", sans-serif;
-  font-size: 7.29167vw;
+  font-size: 6vw;
 }
 
 .mv .cont .mv-catch01-box li:first-child {
