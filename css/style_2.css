@@ -968,6 +968,13 @@ input[type="radio"]:checked + span::after {
 }
 
 @media screen and (max-width: 768px) {
+  .mv .cont .mv-catch01-box {
+    transform: skewX(0);
+    transform: skewY(0);
+  }
+  .mv .cont .mv-catch01-box li {
+    transform: skewX(0);
+  }
   .btn-secondary a {
     font-size: 3.64583vw !important;
   }

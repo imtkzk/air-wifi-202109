@@ -423,7 +423,7 @@ input[type="radio"]:checked + span::after {
 }
 
 .header .header-logo {
-  width: 45vw;
+  width: 30vw;
   margin-left: 1vw;
 }
 
@@ -909,7 +909,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .mv .cont .mv-img {
   width: 58.59375vw;
-  margin: 0 auto;
+  margin: 0 auto 3vw;
 }
 
 .mv .cont .mv-catch02 {
@@ -939,7 +939,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .mv .cont .mv-price {
   max-width: 88.54167vw;
-  margin: 1vw auto 0;
+  margin: 4vw auto;
 }
 
 .mv .cont .mv-price .pricetxt {
@@ -977,7 +977,7 @@ ul.btn-box .btn-secondary a:hover {
 
 .mv .left {
   margin-right: 0;
-  padding-top: 3vw;
+  padding-top: 5vw;
 }
 
 .mv .right {
@@ -1026,7 +1026,7 @@ ul.btn-box .btn-secondary a:hover {
   }
   .mv .cont .mv-catch01-box {
     font-size: 3.33333vw;
-    width: 41.66667vw;
+    width: 45vw;
     max-width: 100%;
     margin: 0;
   }
@@ -1095,7 +1095,7 @@ ul.btn-box .btn-secondary a:hover {
   }
   .mv .cont .mv-catch01-box {
     font-size: 48px;
-    width: 600px;
+    width: 650px;
   }
   .mv .cont .mv-catch01-box li {
     -webkit-box-shadow: 10px 10px #f3e027;

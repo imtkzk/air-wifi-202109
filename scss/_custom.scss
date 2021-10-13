@@ -8,6 +8,7 @@
 .mv .cont .mv-catch01-box li:first-child {
   margin-left: 0;
 }
+
 .mv-price{
   .pricetxtTax{
     text-align: right;
@@ -543,6 +544,18 @@
   margin-top: 80px;
 }
 @media screen and (max-width: $breakpoint1-max){
+
+.mv .cont .mv-catch01-box {
+  -webkit-transform: skewX(0);
+          transform: skewX(0);
+  -webkit-transform: skewY(0);
+          transform: skewY(0);
+}
+
+.mv .cont .mv-catch01-box li {
+  -webkit-transform: skewX(0);
+          transform: skewX(0);
+}
   .btn-secondary a{
     font-size: vw-sp(28)!important;
     span{
